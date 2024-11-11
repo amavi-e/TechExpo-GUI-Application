@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="590.0" prefWidth="1065.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java.ViewingProjectDetailsController">
+   <children>
+      <TableView fx:id="viewtable" layoutX="57.0" layoutY="104.0" prefHeight="383.0" prefWidth="899.0">
+        <columns>
+          <TableColumn fx:id="projectidcolumn" prefWidth="124.0" text="Project ID" />
+          <TableColumn fx:id="projectnamecolumn" prefWidth="101.0" text="Project Name" />
+            <TableColumn minWidth="0.0" prefWidth="0.0" text="Column X" />
+            <TableColumn fx:id="projectcategorycolumn" prefWidth="123.0" text="Category" />
+            <TableColumn fx:id="teammemberscolumn" prefWidth="121.0" text="Team Members" />
+            <TableColumn fx:id="descriptioncolumn" prefWidth="173.0" text="Description" />
+            <TableColumn fx:id="countrycolumn" prefWidth="128.0" text="Country" />
+            <TableColumn fx:id="teamlogocolumn" prefWidth="128.0" text="Team Logo" />
+        </columns>
+      </TableView>
+      <Label layoutX="425.0" layoutY="39.0" text="View Project Details" underline="true" wrapText="true">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="gotomainpagebutton" layoutX="388.0" layoutY="514.0" mnemonicParsing="false" onAction="#onClickMainPageButton" text="Main Page" />
+   </children>
+</AnchorPane>
